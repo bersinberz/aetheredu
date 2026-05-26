@@ -1,0 +1,88 @@
+/* ── Design tokens ── */
+:root {
+  --sans: 'Inter', system-ui, 'Segoe UI', Roboto, sans-serif;
+
+  /* Light */
+  --page-bg: #eef0f8;
+  --card-bg: rgba(255, 255, 255, 0.85);
+  --border: rgba(99, 102, 241, 0.15);
+  --text-h: #0f0f1a;
+  --text-muted: #6b7280;
+  --text-placeholder: #b0b4c1;
+  --input-bg: rgba(255, 255, 255, 0.9);
+
+  --accent: #4f46e5;
+  --accent-2: #7c3aed;
+  --accent-hover: #4338ca;
+  --accent-ring: rgba(79, 70, 229, 0.2);
+  --accent-glow: rgba(79, 70, 229, 0.35);
+
+  --error-bg: #fff1f2;
+  --error-border: #fecdd3;
+  --error-text: #be123c;
+
+  --orb-1: rgba(99, 102, 241, 0.25);
+  --orb-2: rgba(124, 58, 237, 0.2);
+  --orb-3: rgba(236, 72, 153, 0.15);
+
+  --card-shadow:
+    0 0 0 1px rgba(99, 102, 241, 0.08),
+    0 4px 6px rgba(0, 0, 0, 0.04),
+    0 20px 60px rgba(79, 70, 229, 0.12),
+    0 40px 80px rgba(0, 0, 0, 0.06);
+
+  color-scheme: light dark;
+  font-family: var(--sans);
+  font-size: 16px;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --page-bg: #080a12;
+    --card-bg: rgba(18, 20, 32, 0.9);
+    --border: rgba(99, 102, 241, 0.2);
+    --text-h: #f1f2f8;
+    --text-muted: #8b8fa8;
+    --text-placeholder: #4b4f6a;
+    --input-bg: rgba(255, 255, 255, 0.04);
+
+    --accent: #6366f1;
+    --accent-2: #a78bfa;
+    --accent-hover: #818cf8;
+    --accent-ring: rgba(99, 102, 241, 0.25);
+    --accent-glow: rgba(99, 102, 241, 0.4);
+
+    --error-bg: rgba(190, 18, 60, 0.1);
+    --error-border: rgba(190, 18, 60, 0.3);
+    --error-text: #fb7185;
+
+    --orb-1: rgba(99, 102, 241, 0.18);
+    --orb-2: rgba(124, 58, 237, 0.15);
+    --orb-3: rgba(236, 72, 153, 0.1);
+
+    --card-shadow:
+      0 0 0 1px rgba(99, 102, 241, 0.15),
+      0 4px 6px rgba(0, 0, 0, 0.3),
+      0 20px 60px rgba(79, 70, 229, 0.2),
+      0 40px 80px rgba(0, 0, 0, 0.4);
+  }
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: var(--page-bg);
+  color: var(--text-h);
+}
+
+#root {
+  min-height: 100svh;
+}

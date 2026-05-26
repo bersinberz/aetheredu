@@ -1,0 +1,41 @@
+# ── Dependencies ──
+node_modules/
+
+# ── Build output ──
+dist/
+dist-ssr/
+
+# ── Environment variables ──
+.env
+.env.local
+.env.*.local
+.env.development
+.env.production
+
+# ── Logs ──
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# ── TypeScript cache ──
+*.tsbuildinfo
+
+# ── Vite cache ──
+.vite/
+
+# ── Editor ──
+.vscode/*
+!.vscode/extensions.json
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# ── OS ──
+.DS_Store
+Thumbs.db
